@@ -1,3 +1,5 @@
-def call() {
-	echo "Hello this is an Shared Library !"
+def call(String build) {
+	if ("${build} =="build"){
+	    sh "mvn clean package"
+	}
 }
